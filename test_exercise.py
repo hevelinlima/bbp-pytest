@@ -2,7 +2,7 @@ def admin_command(command, sudo=True):
     # Prefix a command with `sudo` unless it is explicitly not needed. Expects `command` to be a list.
 
     if sudo:
-        ["sudo"] + command
+        return ["sudo"] + command
     return command
 
 
